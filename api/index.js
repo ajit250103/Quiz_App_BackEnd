@@ -13,5 +13,8 @@ const app=express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
+app.use("/", (req, res) => {
+    res.send("Backend is running");
+});
 app.use("/quiz",quiz);
 app.listen(4000,()=>{console.log("Server Started at 4000")});
