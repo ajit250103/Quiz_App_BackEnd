@@ -2,7 +2,7 @@ const mongoose= require("mongoose");
 const express= require("express");
 const bodyParser = require("body-parser");
 const cors=require("cors");
-const quiz = require("./controller/quiz");
+const quiz = require("../controller/quiz");
 mongoose.set("strictQuery",true);
 // mongoose.connect("mongodb+srv://thavaneshr:12345@cluster0.odxpuvt.mongodb.net/quizappdb");
 mongoose.connect("mongodb+srv://ajitpal2501:2501MongoDB@cluster0.yafmn3p.mongodb.net/?retryWrites=true&w=majority");
